@@ -1,0 +1,23 @@
+.logo{
+    color: white;
+    margin-top: -2px;
+}
+
+.header{
+    width: 100%;
+    background-color: #0b41b8;
+}
+.welcome{
+    font-size: 22px;
+    color: white;
+    margin-top: -1px;
+    width: 500px;
+}
+
+.lastrow ul{
+    justify-content: center !important;
+}
+.blue{
+    background-color: #0b41b8;
+
+}
