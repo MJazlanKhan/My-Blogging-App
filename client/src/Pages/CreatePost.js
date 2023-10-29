@@ -35,7 +35,7 @@ const CreatePost = () => {
       console.log(postDetails)
       try {
         console.log(postDetails)
-        const res = await axios.post('http://localhost:9000/api/v1/post', postDetails)
+        const res = await axios.post('https://my-blogging-app-server.vercel.app/api/v1/post', postDetails)
         // console.log(res.data.message)
         alert(res.data.message)
         Navigate("/")
@@ -57,7 +57,7 @@ const CreatePost = () => {
     formData.append('image', file);
 
     try {
-      const response = await axios.post('http://localhost:9000/api/v1/upload', formData);
+      const response = await axios.post('https://my-blogging-app-server.vercel.app/api/v1/upload', formData);
       console.log('Image URL:', response.data.url);
       setPostDetails({ ...postDetails, imageURL: response.data.url })
       // console.log(postDetails)
