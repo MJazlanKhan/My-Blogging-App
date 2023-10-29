@@ -19,7 +19,7 @@ const Reset = () => {
     e.preventDefault();
     console.log(inputs)
     try {
-      const res = await axios.post("http://localhost:9000/api/v1/user/reset", inputs);
+      const res = await axios.post("https://my-blogging-app-server.vercel.app/api/v1/user/reset", inputs);
       alert(res.data);
       Navigate("/login")
     } catch (error) {
