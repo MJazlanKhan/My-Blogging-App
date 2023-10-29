@@ -20,7 +20,7 @@ function SingleBlog() {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await axios.get(`http://localhost:9000/api/v1/posts/${postId}`);
+        const response = await axios.get(`https://my-blogging-app-server.vercel.app/api/v1/posts/${postId}`);
         if (response.status === 200) {
           setPostDetails(response.data);
         } else {
@@ -43,7 +43,7 @@ function SingleBlog() {
     const confirmed = window.confirm('Are you sure you want to delete this post?');
 
     if (confirmed) {
-      axios.delete(`http://localhost:9000/api/v1/posts/${postId}`)
+      axios.delete(`https://my-blogging-app-server.vercel.app/api/v1/posts/${postId}`)
         .then((response) => {
           console.log('Post deleted successfully', response);
           alert('Post deleted successfully')
@@ -67,7 +67,7 @@ function SingleBlog() {
       const updatedSummary = postDetails.summary;
       const updatedContent = postDetails.content;
 
-      const response = await axios.put(`http://localhost:9000/api/v1/posts/${postId}`, {
+      const response = await axios.put(`https://my-blogging-app-server.vercel.app/api/v1/posts/${postId}`, {
         title: updatedTitle,
         summary: updatedSummary,
         content: updatedContent
@@ -124,7 +124,7 @@ function SingleBlog() {
                 </>
                 <h2>{postDetails.title}</h2>
                 <p className='author'>Author: {postDetails.author}</p>
-                <img src={`http://localhost:9000${postDetails.imageURL}`} alt="Image" />
+                <img src={`https://my-blogging-app-server.vercel.app${postDetails.imageURL}`} alt="Image" />
 
                 <div
                   className="content"
