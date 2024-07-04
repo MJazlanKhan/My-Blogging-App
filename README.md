@@ -1,24 +1,30 @@
 
-# MERN STACK Movie Website 
+# MERN STACK Blogging Website 
 
-This project is a movie website built using React.js for the frontend, Express.js and Node.js for the backend, and MongoDB for the database. It utilizes several technologies and libraries including antd, Axios, antd Icons, and FroalaEditor for various functionalities.
+This project is a blogging application built using React.js for the frontend, Express.js and Node.js for the backend, and MongoDB for the database. It utilizes several technologies and libraries including antd, Axios, antd Icons, and FroalaEditor for various functionalities.
+
 
 
 
 ## Features
 
-- Admin Functionality:
+- User Registration and Authentication::
 
-    Admin users can upload new movies to the website.
+    Users can register, login, and authenticate to access the application.
 
-- Guest User Access:
+- User Features:
 
-    Guest users can browse and watch movies available on the website.
+    Registered users can view posts, write new posts, edit their own posts, and delete their own posts.
 
 - Member Features:
 
-Signed-up members have additional privileges such as creating and managing playlists.
+    Guest users can browse and view posts available on the website
 
+- Admin Functionality:
+
+Admin users have special privileges
+    Admins can delete any user's posts.
+    Admins can ban user accounts.
 ### Technologies Used
 
 #### Frontend:
@@ -51,7 +57,7 @@ To run this project locally, follow these steps:
 
 ```bash
 git clone <repository-url>
-cd movie-website-project
+cd My-Blogging-App
 
 ```
 
